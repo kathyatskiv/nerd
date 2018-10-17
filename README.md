@@ -14,3 +14,9 @@
 ```
 npm run serve
 ```
+
+## Compress images
+
+```
+npm run img
+```
