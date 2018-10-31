@@ -79,4 +79,5 @@ gulp.task('reload', () => {
 gulp.task('watch', ['img', 'css', 'html', 'reload'], () => {
   watch('src/**/*.scss', () => gulp.start('css'));
   watch('src/**/*.html', () => gulp.start('html'));
+  watch('src/assets/img/**/*.*', () => gulp.start('img'));
 });
