@@ -2,7 +2,10 @@ $base-font: 'Roboto', sans-serif;
 $bold: 700;
 $medium: 500;
 
-$primary: #e74246;
+// $primary: #e74246;
+$second-font: 'Roboto Condensed', sans-serif;
+
+$primary: #fff;
 $secondary: #eee;
 
 $primary-text: #000;
@@ -13,3 +16,8 @@ $text-active: rgba($color: #000000, $alpha: .3);
 $success: green;
 $warning: yellow;
 $danger: red;
+
+$lik: #000;
+$visi: #000;
+$hove: #fb565a;
+$activ:#a6a6a6;

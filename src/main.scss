@@ -1,8 +1,14 @@
 @import "normalize";
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+=======
+>>>>>>> Header
 @import "./assets/scss/vars";
 @import "./assets/scss/mixins";
 @import "./assets/scss/default";
+
+@import './components/Layout/Header/header';
+@import './components/Layout/Footer/footer';
 
 @import "./components/Hero/hero";
 @import "./components/Hero/hero-slides";
@@ -17,3 +23,6 @@
 
 @import "./components/Clients/clients";
 @import "./components/Clients/clients-divide";
+
+@import "./components/logo/logo";
+@import "./components/nav/nav";

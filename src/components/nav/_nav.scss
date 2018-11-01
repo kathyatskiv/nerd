@@ -1,0 +1,35 @@
+
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 440px;
+    padding-left: 0;
+}
+@include linx ($lik, $visi, $hove, $activ); 
+.nav__link {
+   
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+.nav__link a:hover {
+   display: block;
+    border-bottom: 2px solid red;
+ 
+  }
+
+
+.cart {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart__icon {
+    display: inline-block;
+    padding-right: 20px;
+    color: $visi;
+}
