@@ -1,0 +1,16 @@
+.header {
+    width: 100%;
+    background: #eee;
+    /*
+    @include medium {
+      padding: 65px 0;
+    }*/
+  }
+  
+  .container--header {
+    display: flex;
+    justify-content: space-between;
+    height: 118px;
+    width: 1160px;
+    align-items: center;
+  }
