@@ -1,0 +1,39 @@
+{% import "components/Advantages/Card/card.html" as card %}
+
+{%
+    set cards = [
+        {
+            cardImg: 'img/card-img-1.png',
+            cardImgDescr: '#',
+            cardTitle: 'веб-сайты',
+            cardDescr: 'Мир никогда не будет прежним после того как увидит ваш сайт!',
+            cardColor: 'red'
+        },
+        {
+            cardImg: 'img/card-img-2.png',
+            cardImgDescr: '#',
+            cardTitle: 'приложения',
+            cardDescr: 'Покорите топ-10 приложений в AppStore и Google Play',
+            cardColor: 'yellow'
+        },
+        {
+            cardImg: 'img/card-img-3.png',
+            cardImgDescr: '#',
+            cardTitle: 'презентации',
+            cardDescr: 'Вы даже не подозреваете, насколько вы изумительны!',
+            cardColor: 'green'
+        }
+    ]
+%}
+
+<section class="advantages">
+    {% for item in cards %}
+        {# {{ card.fill({{item.cardImg}}, {{item.cardImgDescr}}, {{item.cardTitle}}, {{item.cardDescr}}, {{item.cardColor}} ) }} #}
+        <div class="card">
+            <img src="{{ item.cardImg }}" alt="{{ item.cardImgDescr }}" class="card__img">
+            <h3 class="card__title">{{ item.cardTitle }}</h3>
+            <p class="card__description">{{ item.cardDescr }}</p>
+            <button class="card__btn {{ item.cardColor }}"">Заказать</button>
+        </div>
+    {% endfor %}
+</section>
