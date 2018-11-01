@@ -1,4 +1,4 @@
-const gulp = require('gulp');
+пгдзconst gulp = require('gulp');
 const sass = require('gulp-sass');
 const watch = require('gulp-watch');
 const autoprefixer = require('gulp-autoprefixer');
@@ -17,7 +17,7 @@ gulp.task('css', () => {
     .pipe(maps.init())
     .pipe(
       sass({
-        includePaths: ['./node_modules/normalize-scss/sass/'],
+        incluePaths: ['./node_modules/normalize-scss/sass/'],
       }),
     )
     .pipe(
