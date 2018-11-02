@@ -23,6 +23,7 @@ body {
 .container {
   width: 100%;
   padding: 0 15px;
+  margin: 0;
 
   @include small {
     margin: 0 auto;
@@ -39,5 +40,12 @@ body {
 
   @include extra {
     width: 1140px;
+  }
+}
+
+.section{
+  border-bottom: #eee 1px solid;
+  @include large{
+    margin: 0 150px;
   }
 }
