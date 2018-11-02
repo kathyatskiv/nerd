@@ -1,0 +1,29 @@
+{%
+    set stats = [
+        {
+            value: '146%',
+            description: 'Уровень самоотдачи'
+        },
+        {
+            value: '100%',
+            description: 'Соблюдение сроков'
+        },
+        {
+            value: '50%',
+            description: 'Минимальная предоплата'
+        }
+    ]    
+%}
+
+<div class="statistics">
+    <img src="img/studio-logo.png" alt="company-logo" class="statistics__img">
+    <h4 class="statistics__title">с 2004 года Любим точность во всем:</h4>
+    <div class="stats-container">
+        {% for stat in stats %}
+            <div class="statistics__stat">
+                <span class="statistics__stat-value">{{ stat.value }}</span>
+                <span class="statistics__stat-description">{{ stat.description }}</span>
+            </div>
+        {% endfor %}
+    </div>
+</div>
