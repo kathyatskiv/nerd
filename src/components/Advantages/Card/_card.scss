@@ -9,12 +9,12 @@
         margin: 0 10px;
     }
 
-    @include medium{
-        
+    @include large{
         &:first-child{
             margin: 35px 10px 0 10px;
         }
     }
+
 }
 
 .card__img{
@@ -55,18 +55,4 @@
     text-align: center;
     margin-top: 10px;
 }
-
-.red{
-    background-color: #fb5559;
-
-    &:hover{
-        background-color: #e74246;
-    }
-
-    &:active{
-        background-color: #d7363a;
-        color: rgba(255, 255, 255, .3);
-    }
-}
-
 

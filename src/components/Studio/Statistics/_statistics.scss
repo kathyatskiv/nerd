@@ -6,7 +6,7 @@
     @include medium{
         margin: 50px 20px 0 20px;
     }
-    @include large{
+    @include extra{
         margin-top: 0;
     }
 }
@@ -14,9 +14,6 @@
 .statistics__img{
     max-width: 300px;
     margin-top: 30px;
-    @include large{
-        margin-top: 80px;
-    }
     @include extra{
         margin-top: 30px;
     }
