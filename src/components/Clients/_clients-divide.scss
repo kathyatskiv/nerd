@@ -1,0 +1,93 @@
+.img-wrapper{
+    position: relative;
+
+    &:not(:first-child){
+        margin-top: 50px;
+    }
+
+    @include medium{
+        margin: 15px 0;
+
+        &:not(:first-child){
+            margin: 15px 0;
+        }
+        &:first-child{
+            margin: 15px 0;
+        }
+    }
+
+    /* @include extra{
+        margin: 15px 50px;
+        &:not(:first-child){
+            margin: 15px 50px;
+        }
+        &:first-child{
+            margin: 15px 50px;
+        }
+    } */
+
+    &:not(:last-child)::before{
+        content: '';
+        width: 100px;
+        height: 1px;
+        background-color: #eee;
+        position: absolute;
+        bottom: -25px;
+        // transform: translateX(-50%);
+    }
+
+    @include medium{
+        &:nth-child(odd)::before{
+            content: '';
+            width: 1px;
+            height: 50px;
+            background-color: #eee;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &:nth-child(even)::before, &:last-child::before{
+            content: '';
+            width: 0;
+            height: 0;
+        }
+    }
+
+    @include large{
+        &:not(:nth-child(3n))::before{
+            content: '';
+            width: 1px;
+            height: 50px;
+            background-color: #eee;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:last-child::before, &:nth-child(3n)::before{
+            content: '';
+            width: 0;
+            height: 0;
+        }
+    }
+
+    @include extra{
+        &:not(:nth-child(4n))::before{
+            content: '';
+            width: 1px;
+            height: 50px;
+            background-color: #eee;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:last-child::before, &:nth-child(4n)::before{
+            content: '';
+            width: 0;
+            height: 0;
+        }
+    }
+}

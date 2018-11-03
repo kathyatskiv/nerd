@@ -1,0 +1,54 @@
+{%
+    set images = [
+        {
+            path: 'img/studio-img-1.png',
+            descr: 'html academy'
+        },
+        {
+            path: 'img/studio-img-2.png',
+            descr: 'barbershop borodinsky'
+        },
+        {
+            path: 'img/studio-img-2.png',
+            descr: 'barbershop borodinsky'
+        },
+        {
+            path: 'img/studio-img-2.png',
+            descr: 'barbershop borodinsky'
+        },
+        {
+            path: 'img/studio-img-2.png',
+            descr: 'barbershop borodinsky'
+        },
+        {
+            path: 'img/studio-img-2.png',
+            descr: 'barbershop borodinsky'
+        },
+        {
+            path: 'img/studio-img-2.png',
+            descr: 'barbershop borodinsky'
+        },
+        {
+            path: 'img/studio-img-3.png',
+            descr: 'pink'
+        },
+        {
+            path: 'img/studio-img-3.png',
+            descr: 'pink'
+        },
+        {
+            path: 'img/studio-img-4.png',
+            descr: 'mishka'
+        }
+    ]
+%}
+
+<section class="clients section">
+    <div class="img-container">
+        {% for image in images %}
+            <div class="img-wrapper">
+                <img src="{{ image.path }}" alt="{{ image.descr }}" class="clients__item">
+            </div>
+        {% endfor %}
+    </div>
+</section>
