@@ -44,8 +44,17 @@ body {
 }
 
 .section{
-  border-bottom: #eee 1px solid;
+  border-bottom: $secondary 1px solid;
   @include large{
     margin: 0 150px;
   }
+}
+
+.btn{
+  border: none;
+  border-radius: 3px;  
+  color: #fff;
+  font-family: $base-font;
+  text-align: center;
+  text-transform: uppercase;
 }
