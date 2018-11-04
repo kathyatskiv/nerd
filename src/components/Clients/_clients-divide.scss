@@ -30,7 +30,7 @@
         content: '';
         width: 100px;
         height: 1px;
-        background-color: #eee;
+        background-color: $secondary;
         position: absolute;
         bottom: -25px;
         // transform: translateX(-50%);
@@ -41,7 +41,7 @@
             content: '';
             width: 1px;
             height: 50px;
-            background-color: #eee;
+            background-color: $secondary;
             position: absolute;
             right: 0;
             top: 50%;
@@ -60,7 +60,7 @@
             content: '';
             width: 1px;
             height: 50px;
-            background-color: #eee;
+            background-color: $secondary;
             position: absolute;
             right: 0;
             top: 50%;
@@ -78,7 +78,7 @@
             content: '';
             width: 1px;
             height: 50px;
-            background-color: #eee;
+            background-color: $secondary;
             position: absolute;
             right: 0;
             top: 50%;
