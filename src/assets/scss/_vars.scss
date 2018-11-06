@@ -1,17 +1,22 @@
 $base-font: 'Roboto', sans-serif;
+<<<<<<< HEAD
 $bold: 700;
 $medium: 500;
 
 // $primary: #e74246;
 $second-font: 'Roboto Condensed', sans-serif;
+=======
+>>>>>>> contacts and footer and adaptiv
 
-$primary: #fff;
-$secondary: #eee;
+$primary: #e74246;
+$secondary: #e1e1e1;
+$background: #eee;
 
 $primary-text: #000;
 $secondary-text: #283136;
 $text-hover: #fb565a;
 $text-active: rgba($color: #000000, $alpha: .3);
+<<<<<<< HEAD
 
 $success: green;
 $warning: yellow;
@@ -21,3 +26,14 @@ $lik: #000;
 $visi: #000;
 $hove: #fb565a;
 $activ:#a6a6a6;
+=======
+
+$success: green;
+$warning: yellow;
+$danger: red;
+
+$link: #000;
+$visited: #000;
+$hover: #fb565a;
+$active:#a6a6a6;
+>>>>>>> contacts and footer and adaptiv

@@ -54,3 +54,34 @@ $breakpoint-super: 1800px;
   font-size: $size + px;
   font-size: $size / 16 + rem;
 }
+
+//Links Mixin
+@mixin links ($link, $visited, $hover, $active) {
+  & {
+      color: $link;
+      &:visited {
+          color: $visited;
+      }
+      &:hover {
+          color: $hover;
+      }
+      &:active, &:focus {
+          color: $active;
+      }
+  }
+}
+
+@mixin linksbg ($linkbg, $visitedbg, $hoverbg, $activebg) {
+  & {
+    background-color: $linkbg;
+      &:visited {
+        background-color: $visitedbg;
+      }
+      &:hover {
+        background-color: $hoverbg;
+      }
+      &:active, &:focus {
+        background-color: $activebg;
+      }
+  }
+}

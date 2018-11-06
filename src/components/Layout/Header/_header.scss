@@ -1,16 +1,15 @@
 .header {
-    width: 100%;
-    background: #eee;
-    /*
-    @include medium {
-      padding: 65px 0;
-    }*/
-  }
+  position: fixed; 
+  width: 100%;
+  background: $background;
+  z-index: 100;
+}
   
-  .container--header {
-    display: flex;
-    justify-content: space-between;
-    height: 118px;
-    width: 1160px;
-    align-items: center;
-  }
+.container--header {
+  display: flex;
+  justify-content: space-between;
+  height: 118px;
+  max-width: 1460px;
+  align-items: center;
+  overflow: hidden;
+}

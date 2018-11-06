@@ -1,35 +1,40 @@
 {%
-    set items = [
-      { title: 'студия', href: 'index.html' },
-      { title: 'клиенты', href: '#' },
-      { title: 'магазин', href: '#' },
-      { title: 'контакты', href: '#' }
-   ]
- 
-  %}
-  
-  <nav class="nav">
-    <ul class="nav__list">
-  
-      {% for item in items %}
-        <li class="nav__item">
-          <a href="{{ item.href }}" class="nav__link">
-            {{ item.title }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+set items = [
+{ title: 'студия', href: 'index.html' },
+{ title: 'клиенты', href: '#' },
+{ title: 'магазин', href: '#' },
+{ title: 'контакты', href: '#' }
+]
+%}
 
-  </nav>
-  <div class="cart">
-   <div class="cart__icon">
-    <i class="fas fa-shopping-cart"></i>
-  </div>
-  <a href="#" class="nav__link">
-      корзина
-    </a>
-   
-  </div>
+<nav class="nav">
+  <button class="nav__btn nav__btn--open">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <ul class="nav__list">
+    <button class="nav__btn nav__btn--close">
+      <i class="fas fa-times"></i>
+    </button>
+
+    {% for item in items %}
+    <li class="nav__item">
+      <a href="{{ item.href }}" class="nav__link nav__underline">
+        {{ item.title }}
+      </a>
+    </li>
+    {% endfor %}
+
+  </ul>
+
+</nav>
+<div class="cart">
+  <a href="#" class="nav__link nav__underline">
+    <i class="fas fa-shopping-cart cart__icon"></i>
+    <span class="cart--active">корзина</span>
+  </a>
+</div>
+  
  
 
   

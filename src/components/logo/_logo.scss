@@ -1,3 +1,23 @@
 .logo {
-    width: 160px;
+  display: block;
+}
+
+ .logo__link {
+  display: block;
+  line-height: 1;
+}
+    
+.logo__img {  
+  opacity: 1;
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+ &:hover {
+    opacity: 0.8;
+ }
+
+ &:active {
+    opacity: 0.3;
+ }
 }
