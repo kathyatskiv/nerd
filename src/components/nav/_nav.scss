@@ -1,35 +1,108 @@
-
-
 .nav__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    width: 440px;
-    padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh; 
+  font-family: $base-font;
+  font-weight: 500;
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform .2s ease-in-out;
+  @include medium {
+    transform: translateX(0);
+    background: none;
+    width: auto;
+    height: auto;
+    overflow-y: visible;
+    flex-direction: row;
+    position: static;
+  }
 }
-@include linx ($lik, $visi, $hove, $activ); 
-.nav__link {
-   
+
+.nav__list--active {
+  top:118px;
+  justify-content: start;
+  padding-top: 20px;
+  background-color: #fdfdfd;
+  transform: translateX(0);
+  z-index: 99;
+}
+
+.nav__item {
+  &:not(:last-child) {
+    margin-bottom: 25px;
+   @include medium {
+      margin: 0 25px 0 0;
+    }
+  }
+ }
+
+.nav__link { 
+  display: block;
   text-decoration: none;
   text-transform: uppercase;
-
+  padding-bottom: 5px;
+  @include links ($link, $visited, $hover, $active);
 }
-.nav__link a:hover {
-   display: block;
-    border-bottom: 2px solid red;
- 
+
+.nav__link a:active {
+  border-bottom: 2px solid $hover;
   }
 
+.nav__btn {
+  border: none;
+  padding: 0;
+  background: none;
+  color: $hover;
+  font-size: 25px;
+  cursor: pointer;
+  @include medium {
+    display: none;
+  }
+}  
 
+.nav__underline {
+  padding-bottom: 5px;
+  color: $visited; 
+  border-bottom: 2px solid #fb565a;
+}
+
+.nav__btn--close {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 99;
+}
+  
 .cart {
-    width: 120px;
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
 }
 
 .cart__icon {
+  display: inline-block;
+  padding-right: 20px;
+  color: $active;
+  @include font-size(20);
+  @include medium {
     display: inline-block;
-    padding-right: 20px;
-    color: $visi;
+    @include font-size(16);
+  }
+}
+  
+.cart--active {
+  padding: 0;
+  display: none;
+  @include medium {
+    display: inline-block;
+  }
 }
