@@ -1,14 +1,14 @@
 .header {
   position: fixed; 
   width: 100%;
-  background: $background;
+  background: $primary;
   z-index: 100;
 }
   
 .container--header {
   display: flex;
   justify-content: space-between;
-  height: 118px;
+  height: 100px;
   max-width: 1460px;
   align-items: center;
   overflow: hidden;

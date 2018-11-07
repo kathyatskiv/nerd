@@ -1,12 +1,12 @@
 .hero{
     position: relative;
-    background-color: $secondary;
+    background-color: $primary;
     height: 375px;
     @include medium{
         height: 450px;
     }
     @include large{
-        height: 550px;
+        height: 600px;
     }
     display: flex;
     align-items: flex-end;

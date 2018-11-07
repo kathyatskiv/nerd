@@ -40,11 +40,10 @@ body {
   @include extra {
     width: 1140px;
   }
-<<<<<<< HEAD
 }
 
 .section{
-  border-bottom: $secondary 1px solid;
+  border-bottom: $primary 1px solid;
   @include large{
     margin: 0 150px;
   }
@@ -62,13 +61,6 @@ h1 {
   line-height: 1;
   font-family: 'Roboto', sans-serif;
   color: #fff;
-=======
->>>>>>> contacts and footer and adaptiv
   
 
   }
-<<<<<<< HEAD
-} 
-=======
-
->>>>>>> contacts and footer and adaptiv
