@@ -7,6 +7,10 @@
   
 .container--header {
   display: flex;
+  width: 100%;
+  @include large{
+    padding: 0 150px;
+  }
   justify-content: space-between;
   height: 100px;
   max-width: 1460px;

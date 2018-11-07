@@ -1,9 +1,12 @@
 .hero{
     position: relative;
     background-color: $primary;
-    height: 375px;
+    height: 500px;
+    @media screen and (min-width: 390px){
+        height: 430px;
+    }
     @include medium{
-        height: 450px;
+        height: 530px;
     }
     @include large{
         height: 600px;
@@ -14,8 +17,10 @@
 
 .hero__slide{
     width: 100%;
+    height: 75%;
     padding: 0 25px;
     @include large{
+        height: 80%;
        margin: 0 150px;
        
     }
@@ -46,6 +51,10 @@
 }
 
 .slide__title{
+    background-color: rgba($color: #fff, $alpha: .3);
+    @include large{
+        background-color: rgba($color: #fff, $alpha: 0);
+    }
     @include font-size(36);
     line-height: 36px;
     text-align: center;

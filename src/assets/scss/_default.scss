@@ -25,7 +25,7 @@ body {
   padding: 0 15px;
 
   @include small {
-    margin: 0 auto;
+    margin: 0;
     width: 540px;
   }
 
