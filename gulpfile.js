@@ -1,4 +1,4 @@
-пгдзconst gulp = require('gulp');
+const gulp = require('gulp');
 const sass = require('gulp-sass');
 const watch = require('gulp-watch');
 const autoprefixer = require('gulp-autoprefixer');
@@ -17,7 +17,7 @@ gulp.task('css', () => {
     .pipe(maps.init())
     .pipe(
       sass({
-        incluePaths: ['./node_modules/normalize-scss/sass/'],
+        incluePaths: ['/node_modules/normalize-scss/sass'],
       }),
     )
     .pipe(
@@ -66,7 +66,6 @@ gulp.task('img', () => {
     )
     .pipe(gulp.dest('dist/img'));
 });
-
 gulp.task('reload', () => {
   sync({
     server: {

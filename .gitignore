@@ -1,4 +1,5 @@
-node_modules/
 dist/
-nerds/
-nerds.zip
+node_modules/
+src/assets/scss/_default.scss
+dist/index_files/
+src/assets/index_files
