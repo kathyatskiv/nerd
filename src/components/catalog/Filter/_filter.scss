@@ -1,0 +1,103 @@
+.ui-widget-header{
+	background: #00ca74;
+}
+.ui-slider-horizontal {
+	height: 2px;
+	background: #d7dbdd;
+}
+.ui-widget.ui-widget-content {
+    border: 0px solid #c5c5c5;
+}
+
+.ui-widget-content{
+	border: 0px solid #c5c5c5;
+}
+.ui-corner-all{
+	border-radius: 10px;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -0.6em;
+    margin-left: -0.6em;
+}
+.polz{
+	background: #ededed;
+	border: none;
+	width: 80px;
+	height: 38px;
+	position: relative;
+	margin: 14px 0px 14px 11px;
+	display: inline block;
+	border-radius: 3px;
+	text-align: center;
+}
+.ot{
+	display: inline-block;
+}
+.do{
+	display: inline-block;
+	margin: 0 0 0 21px;
+}
+.slaider-my{
+	background: #ededed;
+	position: relative;
+	width: 260px;
+	height: 80px;
+	border-radius: 3px;
+}
+.ui-slider{
+	top: 39px;
+	width: 210px;
+	left: 28px;
+}
+.old_side{
+	width: 260px;
+	height: auto;
+	margin: 0 140;
+	display: inline-block;
+}
+
+.stoim{
+	margin: 60px;
+}
+
+.choice{
+	width: 260px;
+	height: 50px;
+	border: none;
+	margin: 48 0 px;
+	background: #ededed;
+}
+
+.pris{
+	margin: 2px;
+
+}
+
+
+.CheckBoxClass,.RadioClass{
+	 display: none; 
+}
+.CheckBoxLabelClass{
+	 background: url("/img/checkbox-off.png") no-repeat;
+	 padding-left: 3px;
+	 padding-top: 3px;
+	 margin: 5px; 
+	 height: 23px; 
+	 width: 23px; 
+	 display: inline-block;
+	position: relative;
+	top: 10px; }
+.CheckBoxLabelClass:hover{
+	text-decoration: underline;
+}
+.LabelSelected{ 
+	background: url("/img/checkbox-on.png") no-repeat; 
+}
+
+.content{
+	width: 1160px;
+	height: auto;
+	display: flex;
+	justify-content: center;	
+}
+
