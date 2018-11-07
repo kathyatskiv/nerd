@@ -42,8 +42,13 @@
 }
 
 .footer__right {
+    padding-top: 50px;
+    @include medium{
+        padding-top: 0;
+    }
     display: block;
     margin: 0 auto;
+    text-align: center;
 }
 
 .footer__title {
