@@ -1,12 +1,16 @@
+.footer{
+    display: flex;
+}
+
 .container--footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 217px;
-    margin: 35px 0;
+    margin: 35px auto;
     @include medium {
-        margin: 0;
+        margin: auto;
         display: flex;
         flex-direction: row-reverse;
     } 
