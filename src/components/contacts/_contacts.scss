@@ -11,8 +11,12 @@
 
 .container--contacts {
     display: flex;
+<<<<<<< HEAD
     align-items: center;
        
+=======
+    padding: 0 15px;
+>>>>>>> ca7d82c4bcb5ded74abc3f198e7772f2b62f34a9
     @include medium {
         max-width: 1410px;
         width: 100%;
@@ -26,16 +30,30 @@
     display: flex;
     flex-direction: column;
     align-items: right;
+<<<<<<< HEAD
     margin: 10px;
     width: 319px;
     height: 308px;
     padding: 20px 10px;
+=======
+    // width: 90%;
+    // height: 90%;
+    padding: 50px 10px 50px 20px;
+>>>>>>> ca7d82c4bcb5ded74abc3f198e7772f2b62f34a9
     background: #fff;
+    opacity: .8;
     font-style: normal;
     overflow: hidden;
     @include medium {
+<<<<<<< HEAD
         margin-left: 130px;
         padding: 53px 0 47px 50px;
+=======
+        padding: 50px 0 50px 50px;
+        width: 319px;
+        height: 308px;
+        opacity: 1;
+>>>>>>> ca7d82c4bcb5ded74abc3f198e7772f2b62f34a9
     }
 }
 
