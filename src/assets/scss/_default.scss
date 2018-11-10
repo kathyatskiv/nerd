@@ -1,0 +1,66 @@
+@include normalize();
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: $base-font;
+}
+
+.content {
+  flex: 1 0;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+
+  @include small {
+    margin: 0;
+    width: 540px;
+  }
+
+  @include medium {
+    width: 720px;
+  }
+
+  @include large {
+    width: 960px;
+  }
+
+  @include extra {
+    width: 1140px;
+  }
+}
+
+.section{
+  border-bottom: $primary 1px solid;
+  @include large{
+    margin: 0 150px;
+  }
+}
+
+.btn{
+  border: none;
+  border-radius: 3px;  
+  color: #fff;
+  font-family: $base-font;
+  text-align: center;
+  text-transform: uppercase;
+}
+h1 {
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  
+
+  }

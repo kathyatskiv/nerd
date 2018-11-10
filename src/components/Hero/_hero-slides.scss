@@ -1,0 +1,71 @@
+.dot-1, .dot-2, .dot-3{
+    position: absolute;
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    bottom: 15px;
+    left: 50%;
+    @include medium{
+        width: 20px;
+        height: 20px;
+        bottom: 100px;
+    }
+}
+
+.dot-1{
+    transform: translateX(-200%);
+}
+
+.dot-2{
+    transform: translateX(-50%);
+}
+
+.dot-3{
+    transform: translateX(100%); 
+}
+
+.hero__slide{
+    &.slide-1{
+        display: none;
+        background-image: url('../img/slider-pic-1.png');
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        @include medium{
+            background-position: right bottom;
+            background-size: auto 100%;
+        }
+        @include super{
+            background-position: center bottom;
+        }
+    }
+    &.slide-2{
+        
+        background-image: url('../img/slider-pic-2.png');
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        @include medium{
+            background-position: right bottom;
+            background-size: auto 100%;
+        }
+        @include super{
+            background-position: center bottom;
+        }
+    }
+    &.slide-3{
+        display: none;
+        background-image: url('../img/slider-pic-3.png');
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        @include medium{
+            background-position: right bottom;
+            background-size: auto 100%;
+        }
+        @include super{
+            background-position: center bottom;
+        }
+    }
+}

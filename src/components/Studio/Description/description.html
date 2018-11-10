@@ -1,0 +1,30 @@
+{%
+    set items = [
+        {
+            title: 'Веб-сайтов любой сложности'
+        },
+        {
+            title: 'Мобильных приложений для iOS и Android'  
+        },
+        {
+            title: 'Слайдшоу и видео для корпоративных презентаций'
+        }
+    ]
+%}
+
+<div class="description">
+    <h2 class="description__title">
+        Мы — маленькая, но гордая дизайн-студия из Краснодара.
+    </h2>
+    <p class="description__sub-title">
+        Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
+    </p>
+    <div class="list-wrapper">
+        <h3 class="description__list-title">Выполняем заказы на разработку:</h3>
+        <ul class="description__list">
+            {% for item in items%}
+                <li class="description__list-item">{{ item.title }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

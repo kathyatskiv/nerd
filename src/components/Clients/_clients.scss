@@ -1,0 +1,44 @@
+.clients{
+    padding: 25px 0;
+}
+
+.img-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include medium{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.img-wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    @include large{
+        width: 33%;
+    }
+    @include extra{
+        width: 25%;
+    }
+}
+
+.clients__item{
+    max-width: 210px;
+    margin: 0;
+
+    opacity: .2;
+    transition: opacity ease-in-out .2s;
+    &:hover{
+        opacity: 1;
+    }
+    &:active{
+        opacity: .1;
+    }
+
+}

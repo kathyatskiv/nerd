@@ -1,0 +1,39 @@
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="/index_files/jquery-1.js">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="filtre.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    <!-- ..............ползучая хрень -->
+    <script>
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 20000,
+                values: [0, 15000],
+                slide: function (event, ui) {
+                    $("#amount").val(ui.values[0]);
+                    $("#amount2").val(ui.values[1]);
+                }
+            });
+            $("#amount").val($("#slider-range").slider("values", 0));
+            $("#amount2").val($("#slider-range").slider("values", 1));
+        });
+    </script>
+    <!-- ползучая хрень............ -->
+    <!-- ...........................СТРЕЛКИИИИИИИ -->
+    <script>
+    $('nav-li-btn').on('click', function() {
+        $(this).hasClass('desc') || $(this).hasClass('asc') ? 
+          $(this).toggleClass('asc desc') : $(this).addClass('desc');
+      });
+      </script>
+    <!-- СТРЕЛКИИИИИИИ............................ -->
+        
