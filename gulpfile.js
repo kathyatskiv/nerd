@@ -17,7 +17,7 @@ gulp.task('css', () => {
     .pipe(maps.init())
     .pipe(
       sass({
-        includePaths: ['./node_modules/normalize-scss/sass/'],
+        includePaths: ['./node_modules/normalize-scss/sass/']
       }),
     )
     .pipe(
