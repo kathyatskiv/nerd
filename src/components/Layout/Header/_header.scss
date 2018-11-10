@@ -1,5 +1,5 @@
 .header {
-  position: fixed; 
+ /* position: fixed; */
   width: 100%;
   background: $background;
   z-index: 100;
@@ -11,5 +11,4 @@
   height: 118px;
   max-width: 1460px;
   align-items: center;
-  overflow: hidden;
-}
+ }

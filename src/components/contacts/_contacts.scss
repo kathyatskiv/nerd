@@ -2,22 +2,23 @@
     display: flex;
     flex-direction: column;
     justify-content:center;
-    background: url('../img/map-fragment.jpg') center center no-repeat/cover;
+    width: 100%;
+    height: auto;
+    background: url("../img/map-fragment.jpg") no-repeat ;
     background-size: cover;
-    height: 416px;
-    min-height: 416px;
-    position: relative;
     padding-left: 0;
-    @include medium {
-        position: relative;
-    }
 }
 
 .container--contacts {
     display: flex;
+    align-items: center;
+       
     @include medium {
-        position: absolute;
-        margin-left: 190px;
+        max-width: 1410px;
+        width: 100%;
+        height: 416px;
+        background: none;
+                
     }
 }
 
@@ -25,14 +26,16 @@
     display: flex;
     flex-direction: column;
     align-items: right;
-    width: 90%;
-    height: 90%;
-    padding: 53px 0 47px 50px;
+    margin: 10px;
+    width: 319px;
+    height: 308px;
+    padding: 20px 10px;
     background: #fff;
     font-style: normal;
+    overflow: hidden;
     @include medium {
-        width: 319px;
-        height: 308px;
+        margin-left: 130px;
+        padding: 53px 0 47px 50px;
     }
 }
 
@@ -65,12 +68,11 @@
     text-decoration: none;
     width: 220px;
     height: 51px;
-}
-
-.address__btn { @include linksbg ($hover, $hover, #e74246, #d7373b); 
-}
-
-.address__btn { @include links (#fff, #fff, #fff, #e37376); 
+    background-color: $hover;
+    @include links (#fff, #fff, #fff, #e37376); 
+ &:hover {
+     background-color: #e74246;
+ }
 }
 
 

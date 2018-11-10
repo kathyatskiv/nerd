@@ -1,11 +1,16 @@
+.footer {
+    width: 100%;
+}
 .container--footer {
     display: flex;
+    margin-top: 20px; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 217px;
+       
     @include medium {
         display: flex;
+        height: 217px;
         flex-direction: row-reverse;
     } 
 }
@@ -47,12 +52,13 @@
 }
 
 .footer__title {
-    @include font-size(36);
+    @include font-size(28);
     font-weight: 700;
     line-height: 1;
     margin: 0 auto;
     @include medium {
         margin: 0;
+        @include font-size(36);
     }
 }
 
