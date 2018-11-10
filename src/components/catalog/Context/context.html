@@ -1,0 +1,48 @@
+{% extends 'components/catalog/Context/context-layout.html' %}
+
+{%
+    set items = [
+    { src: 'img/sedona.png', alt: 'sedona-price', heat: 'Sedona', pri: '9900 руб.', text:'Информационный сайт для туристов' },
+    { src: 'img/pink.png', alt: 'pink-price', heat: 'pinl-app', pri: '9900 руб.', text:'Продуктовый лендинг приложения для iOS и Android' },
+    { src: 'img/barbershop.png', alt: 'barbershop-price', heat: 'barbershop', pri: '9900 руб.', text:'Сайт салоны красоты. Для мужчин, да.' },
+    { src: 'img/mishka.png', alt: 'michka-prise', heat: 'Mishka', pri: '9900 руб.', text:'Интернет-магазин  вязаных игрушек' },
+    { src: 'img/aplus.png', alt: 'aplus-prise', heat: 'a Plus', pri: '9900 руб.', text:'Лендинг курсов повышения квалификации' },
+    { src: 'img/kvast.png', alt: 'kvast-prise', heat: 'кваст', pri: '9900 руб.', text:'Промо-сайт производителя крафтового кваса' }
+
+    ]    
+%}
+
+
+
+{% block product %}
+    {% for item in items %}
+    <div class="blck">
+        
+        <div class="leibl">
+            <div class="cap">
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+            </div>
+            <div class="image">
+                  <img src="{{item.src}}" alt="{{item.alt}}">  
+            </div>
+        </div>
+        <div class="price">
+            <div class="container_top">
+                <h3 class="top">
+                    {{item.heat}}
+                </h3>
+                <p class="desc">
+                    {{item.text}}
+                </p>
+                <button class="btn btn--catalog">
+                    {{item.pri}}
+                </button>
+            </div>
+            
+        </div>
+    </div>
+    {% endfor %}
+
+{% endblock %}

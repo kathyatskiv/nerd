@@ -1,0 +1,33 @@
+<div class="app">
+    <h1 class="text_app">Магазин готовых шаблонов</h1>
+</div>
+<div class="content_cot">
+    {% include 'components/catalog/Filter/index.html' %}
+<div class="context_input">
+    <div class="nav-context">
+        <div class="sort">
+            <h3 class="sorf-text">сортировать:</h3>
+            <i class="fas fa-sort-amount-up"></i>
+        </div>
+        <div class="nav-sort">
+            <ul class="list">
+                <li class="nav-li"><a class="sil" href="">по цене</a></li>
+                <li class="nav-li"><a class="sil" href="">по типу</a></li>
+                <li class="nav-li"> <a class="sil" href="">по названию</a> </li>
+                <button class="nav-li-btn" id="name"></button>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <!-- <div class="product"> -->
+            {% block product %}{% endblock %}
+        <!-- </div> -->
+        <div class="namber_btn">
+                <button class="namber one"><h3>1</h3></button>
+                <button class="namber"><h3>2</h3></button>
+                <button class="namber"><h3>3</h3></button>
+                <button class="namber next"><h3>следующая</h3></button>
+            </div>
+    </div>
+</div>
+</div>

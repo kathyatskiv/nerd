@@ -17,7 +17,11 @@ gulp.task('css', () => {
     .pipe(maps.init())
     .pipe(
       sass({
+<<<<<<< HEAD
         includePaths: ['./node_modules/normalize-scss/sass/']
+=======
+        includePaths: ['./node_modules/normalize-scss/sass/'],
+>>>>>>> 4dff3d72b7d0c52cd7258c99452d2a117862d0ed
       }),
     )
     .pipe(
@@ -72,12 +76,27 @@ gulp.task('reload', () => {
     server: {
       baseDir: 'dist/',
     },
+<<<<<<< HEAD
     notify: false,
   });
 });
 
+=======
+    notify: true,
+  });
+});
+
+
+
+
+
+>>>>>>> 4dff3d72b7d0c52cd7258c99452d2a117862d0ed
 gulp.task('watch', ['img', 'css', 'html', 'reload'], () => {
   watch('src/**/*.scss', () => gulp.start('css'));
   watch('src/**/*.html', () => gulp.start('html'));
   watch('src/assets/img/**/*.*', () => gulp.start('img'));
+<<<<<<< HEAD
+=======
+  watch('src/index.js', () => gulp.start('jquery_files'));
+>>>>>>> 4dff3d72b7d0c52cd7258c99452d2a117862d0ed
 });
