@@ -4,6 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="/index_files/jquery-1.js">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="filtre.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    <!-- ..............ползучая хрень -->
+    <script>
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 20000,
+                values: [0, 15000],
+                slide: function (event, ui) {
+                    $("#amount").val(ui.values[0]);
+                    $("#amount2").val(ui.values[1]);
+                }
+            });
+            $("#amount").val($("#slider-range").slider("values", 0));
+            $("#amount2").val($("#slider-range").slider("values", 1));
+            $('button').on('click', function() {
+        $(this).hasClass('desc') || $(this).hasClass('asc') ? 
+          $(this).toggleClass('asc desc') : $(this).addClass('desc');
+      });
+        });
+    </script>
+
+        
+
+
   <title>
     
   Main page
@@ -24,55 +62,53 @@
 </div>
 
     
-
-<nav class="nav">
   
-  <ul class="nav__list">
-    <li class="nav__item">
-      <a href="index.html" class="nav__link nav__underline">
-        студия
-      </a>
-    </li>
+  <nav class="nav">
     
-    <li class="nav__item">
-      <a href="#" class="nav__link">
-        клиенты
-      </a>
-    </li>
-    
-    <li class="nav__item">
-      <a href="#" class="nav__link">
-        магазин
-      </a>
-    </li>
-    
-    <li class="nav__item">
-      <a href="#" class="nav__link">
-        контакты
-      </a>
-    </li>
-    
-  </ul>
-
-    <button class="nav__btn nav__btn--close">
-      <i class="fas fa-times"></i>
-    </button>
-
-</nav>
-<div class="cart">
-  <button class="nav__btn nav__btn--open">
-    <i class="fas fa-bars"></i>
-  </button>
-
-  <a href="#" class="nav__link nav__underline">
-    <i class="fas fa-shopping-cart cart__icon"></i>
-    <span class="cart--active">корзина</span>
-  </a>
-</div>
+    <ul class="nav__list">
+      <button class="nav__btn nav__btn--close">
+        <i class="fas fa-times"></i>
+      </button>
   
- 
+      <li class="nav__item">
+        <a href="index.html" class="nav__link nav__underline">
+          студия
+        </a>
+      </li>
 
+      
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          клиенты
+        </a>
+      </li>
+      
+      <li class="nav__item">
+        <a href="catalog.html" class="nav__link ">
+          магазин
+        </a>
+      </li>
+      
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          контакты
+        </a>
+      </li>
+      
   
+    </ul>
+    <div class="cart">
+      <button class="nav__btn nav__btn--open">
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <a href="#" class="nav__link nav__underline">
+        <i class="fas fa-shopping-cart cart__icon"></i>
+        <span class="cart--active">корзина</span>
+      </a>
+    </div>
+  
+  </nav>
   </div>
 </header>
   <div class="content">
@@ -109,7 +145,6 @@
 
 <section class="advantages section">
     
-        
         <div class="card-container">
             <div class="card">
                 <img src="img/card-img-1.png" alt="#" class="card__img">
@@ -119,23 +154,21 @@
             </div>
         </div>
     
-        
         <div class="card-container">
             <div class="card">
                 <img src="img/card-img-2.png" alt="#" class="card__img">
                 <h3 class="card__title">приложения</h3>
                 <p class="card__description">Покорите топ-10 приложений в AppStore и Google Play</p>
-                <button class="card__btn yellow btn">Заказать</button>
+                <button class="card__btn green btn">Заказать</button>
             </div>
         </div>
     
-        
         <div class="card-container">
             <div class="card">
                 <img src="img/card-img-3.png" alt="#" class="card__img">
                 <h3 class="card__title">презентации</h3>
                 <p class="card__description">Вы даже не подозреваете, насколько вы изумительны!</p>
-                <button class="card__btn green btn">Заказать</button>
+                <button class="card__btn yellow btn">Заказать</button>
             </div>
         </div>
     
@@ -211,8 +244,6 @@
         
     </div>
 </section>
-
-  </div>
   <section class="contacts">
     <div class="container--contacts">
         <address class="address">
@@ -225,6 +256,8 @@
         </address>
     </div>
 </section>
+
+  </div>
   
 
 <footer class="footer">

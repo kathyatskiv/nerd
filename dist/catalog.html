@@ -32,17 +32,13 @@
             });
             $("#amount").val($("#slider-range").slider("values", 0));
             $("#amount2").val($("#slider-range").slider("values", 1));
-        });
-    </script>
-    <!-- ползучая хрень............ -->
-    <!-- ...........................СТРЕЛКИИИИИИИ -->
-    <script>
-    $('nav-li-btn').on('click', function() {
+            $('button').on('click', function() {
         $(this).hasClass('desc') || $(this).hasClass('asc') ? 
           $(this).toggleClass('asc desc') : $(this).addClass('desc');
       });
-      </script>
-    <!-- СТРЕЛКИИИИИИИ............................ -->
+        });
+    </script>
+
         
 
 
@@ -66,55 +62,53 @@
 </div>
 
     
-
-<nav class="nav">
   
-  <ul class="nav__list">
-    <li class="nav__item">
-      <a href="index.html" class="nav__link nav__underline">
-        студия
-      </a>
-    </li>
+  <nav class="nav">
     
-    <li class="nav__item">
-      <a href="#" class="nav__link">
-        клиенты
-      </a>
-    </li>
-    
-    <li class="nav__item">
-      <a href="catalog.html" class="nav__link">
-        магазин
-      </a>
-    </li>
-    
-    <li class="nav__item">
-      <a href="#" class="nav__link">
-        контакты
-      </a>
-    </li>
-    
-  </ul>
-
-    <button class="nav__btn nav__btn--close">
-      <i class="fas fa-times"></i>
-    </button>
-
-</nav>
-<div class="cart">
-  <button class="nav__btn nav__btn--open">
-    <i class="fas fa-bars"></i>
-  </button>
-
-  <a href="#" class="nav__link nav__underline">
-    <i class="fas fa-shopping-cart cart__icon"></i>
-    <span class="cart--active">корзина</span>
-  </a>
-</div>
+    <ul class="nav__list">
+      <button class="nav__btn nav__btn--close">
+        <i class="fas fa-times"></i>
+      </button>
   
- 
+      <li class="nav__item">
+        <a href="index.html" class="nav__link nav__underline">
+          студия
+        </a>
+      </li>
 
+      
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          клиенты
+        </a>
+      </li>
+      
+      <li class="nav__item">
+        <a href="catalog.html" class="nav__link ">
+          магазин
+        </a>
+      </li>
+      
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          контакты
+        </a>
+      </li>
+      
   
+    </ul>
+    <div class="cart">
+      <button class="nav__btn nav__btn--open">
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <a href="#" class="nav__link nav__underline">
+        <i class="fas fa-shopping-cart cart__icon"></i>
+        <span class="cart--active">корзина</span>
+      </a>
+    </div>
+  
+  </nav>
   </div>
 </header>
   <div class="content">

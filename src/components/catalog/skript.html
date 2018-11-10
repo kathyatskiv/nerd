@@ -25,15 +25,11 @@
             });
             $("#amount").val($("#slider-range").slider("values", 0));
             $("#amount2").val($("#slider-range").slider("values", 1));
-        });
-    </script>
-    <!-- ползучая хрень............ -->
-    <!-- ...........................СТРЕЛКИИИИИИИ -->
-    <script>
-    $('nav-li-btn').on('click', function() {
+            $('button').on('click', function() {
         $(this).hasClass('desc') || $(this).hasClass('asc') ? 
           $(this).toggleClass('asc desc') : $(this).addClass('desc');
       });
-      </script>
-    <!-- СТРЕЛКИИИИИИИ............................ -->
+        });
+    </script>
+
         
