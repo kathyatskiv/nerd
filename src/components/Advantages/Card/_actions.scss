@@ -1,0 +1,38 @@
+.red{
+    background-color: #fb5559;
+
+    &:hover{
+        background-color: #e74246;
+    }
+
+    &:active{
+        background-color: #d7363a;
+        color: rgba(255, 255, 255, .3);
+    }
+}
+
+.yellow{
+    background-color: #00c973;
+
+    &:hover{
+        background-color: #00bc6b;
+    }
+
+    &:active{
+        background-color: #00aa61;
+        color: rgba(255, 255, 255, .3);
+    }
+}
+
+.green{
+    background-color: #efc749;
+
+    &:hover{
+        background-color: #eab434;
+    }
+
+    &:active{
+        background-color: #e5a722;
+        color: rgba(255, 255, 255, .3);
+    }
+}

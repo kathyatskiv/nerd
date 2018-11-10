@@ -1,3 +1,27 @@
+{%
+  set socials = [
+  { class: 'fa-vk', href: '#' },
+  { class: 'fa-facebook-f', href: '#' },
+  { class: 'fa-instagram', href: '#' }
+  ]
+  %}
+
 <footer class="footer">
-  Hello, from footer
+  <div class="container container--footer">
+    <div class="footer__right">
+      <h3 class="footer__title"> Давайте дружить, это выгодно!</h3>
+      <p class="footer__text">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+    <div class="social">
+      <ul class="social__list">
+        {% for social in socials %}
+        <li class="social__item">
+            <a href="{{social.href}}" class="social__link">
+              <i class="fab {{social.class}}"></i>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </footer>

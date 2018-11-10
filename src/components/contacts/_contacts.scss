@@ -1,0 +1,80 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    background: url('../img/map-fragment.jpg') center center no-repeat/cover;
+    background-size: cover;
+    height: 416px;
+    min-height: 416px;
+    position: relative;
+    padding-left: 0;
+    @include medium {
+        position: relative;
+    }
+}
+
+.container--contacts {
+    display: flex;
+    padding: 0 15px;
+    @include medium {
+        position: absolute;
+        margin-left: 190px;
+    }
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    // width: 90%;
+    // height: 90%;
+    padding: 50px 10px 50px 20px;
+    background: #fff;
+    opacity: .8;
+    font-style: normal;
+    @include medium {
+        padding: 50px 0 50px 50px;
+        width: 319px;
+        height: 308px;
+        opacity: 1;
+    }
+}
+
+.address__title {
+    @include font-size(18);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+}
+
+.address__list {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 40px;
+    margin: 0;
+    line-height: 1.135;
+    color: #666;
+}
+
+.address__item {
+    padding-top: 20px;
+}
+
+.address__btn {
+    display: block;
+    padding: 17px 45px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 220px;
+    height: 51px;
+}
+
+.address__btn { @include linksbg ($hover, $hover, #e74246, #d7373b); 
+}
+
+.address__btn { @include links (#fff, #fff, #fff, #e37376); 
+}
+
+

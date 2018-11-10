@@ -2,6 +2,7 @@ $breakpoint-small: 576px;
 $breakpoint-medium: 768px;
 $breakpoint-large: 992px;
 $breakpoint-extra: 1200px;
+$breakpoint-super: 1800px;
 
 @mixin small {
   @media screen and (min-width: $breakpoint-small) {
@@ -27,6 +28,12 @@ $breakpoint-extra: 1200px;
   }
 }
 
+@mixin super {
+  @media screen and (min-width: $breakpoint-super) {
+    @content;
+  }
+}
+
 
 @mixin placeholder {
   ::-webkit-input-placeholder {
@@ -46,4 +53,35 @@ $breakpoint-extra: 1200px;
 @mixin font-size($size) {
   font-size: $size + px;
   font-size: $size / 16 + rem;
+}
+
+//Links Mixin
+@mixin links ($link, $visited, $hover, $active) {
+  & {
+      color: $link;
+      &:visited {
+          color: $visited;
+      }
+      &:hover {
+          color: $hover;
+      }
+      &:active, &:focus {
+          color: $active;
+      }
+  }
+}
+
+@mixin linksbg ($linkbg, $visitedbg, $hoverbg, $activebg) {
+  & {
+    background-color: $linkbg;
+      &:visited {
+        background-color: $visitedbg;
+      }
+      &:hover {
+        background-color: $hoverbg;
+      }
+      &:active, &:focus {
+        background-color: $activebg;
+      }
+  }
 }
