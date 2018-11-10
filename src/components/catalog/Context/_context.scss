@@ -246,6 +246,15 @@ h3{
     width: 260px;
   }
 
+.btn--catalog{
+    &:hover{
+        background-color: #e74246;
+    }
 
+    &:active{
+        border-color: #d7363a;
+        color: rgba($color: #fff, $alpha: .3);
+    }
+}
 
   
