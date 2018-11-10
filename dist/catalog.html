@@ -4,6 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="/index_files/jquery-1.js">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="filtre.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    <!-- ..............ползучая хрень -->
+    <script>
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 20000,
+                values: [0, 15000],
+                slide: function (event, ui) {
+                    $("#amount").val(ui.values[0]);
+                    $("#amount2").val(ui.values[1]);
+                }
+            });
+            $("#amount").val($("#slider-range").slider("values", 0));
+            $("#amount2").val($("#slider-range").slider("values", 1));
+        });
+    </script>
+    <!-- ползучая хрень............ -->
+    <!-- ...........................СТРЕЛКИИИИИИИ -->
+    <script>
+    $('nav-li-btn').on('click', function() {
+        $(this).hasClass('desc') || $(this).hasClass('asc') ? 
+          $(this).toggleClass('asc desc') : $(this).addClass('desc');
+      });
+      </script>
+    <!-- СТРЕЛКИИИИИИИ............................ -->
+        
+
+
   <title>
     
   Main page
@@ -41,7 +83,7 @@
     </li>
     
     <li class="nav__item">
-      <a href="#" class="nav__link">
+      <a href="catalog.html" class="nav__link">
         магазин
       </a>
     </li>
@@ -77,10 +119,255 @@
 </header>
   <div class="content">
     
-  <!-- Your unique page content -->
+<div class="app">
+    <h1 class="text_app">Магазин готовых шаблонов</h1>
+</div>
+<div class="content_cot">
+    
+    <div class="old_side">
+        <h3 class="stoim">стоимость :</h2>
+            <div class="slaider-my">
+                <div id="slider-range"></div>
+            </div>
+        <p class="ot">ОТ </p>
+        <input class="polz" type="text" id="amount">
+        <p class="do">ДО </p>
+        <input class="polz" type="text" id="amount2">
 
-  </div>
-  <section class="contacts">
+        <div class="osob">
+            <h3 class="osobenosti">сетка :</h3>
+            <p><input type="radio" name="grid" id="click" style="width: 23px;
+                height: 23px; margin: 0 10px;">Адаптивная</p>
+            <p><input type="radio" name="grid" id="click" style="width: 23px;
+                height: 23px; margin: 0 10px;" checked>Фиксированная</p>
+            <p><input type="radio" name="grid" id="notClick" style="width: 23px;
+                height: 23px; margin: 0 10px;" disabled>Резиновая</p>
+            <h3 class="osobenosti">особеннсти :</h3>
+            <p><input type="checkbox" id="click" style="width: 23px;
+                height: 23px; margin: 0 10px;" checked>Слайдер</p>
+            <p><input type="checkbox" id="click" style="width: 23px;
+                height: 23px; margin: 0 10px;">Блок преймуществ</p>
+            <p><input type="checkbox" id="click" style="width: 23px;
+                height: 23px; margin: 0 10px;" checked>Новости</p>
+            <p><input type="checkbox" id="click" style="width: 23px;
+                height: 23px; margin: 0 10px;">Галирея</p>
+            <p><input type="checkbox" id="click" style="width: 23px;
+                height: 23px; margin: 0 10px;">Корзина</p>
+
+
+        </div>
+            <button class="choice"><h3>показать</h3></button>
+    </div>
+    <!-- <button class="edfil">
+        <i class="far fa-edit"></i>
+    </button> -->
+    <div class="edfil">
+        <a href="#" class="menu-btn">
+          <span></span>
+        </a>
+      </div>
+
+<div class="context_input">
+    <div class="nav-context">
+        <div class="sort">
+            <h3 class="sorf-text">сортировать:</h3>
+            <i class="fas fa-sort-amount-up"></i>
+        </div>
+        <div class="nav-sort">
+            <ul class="list">
+                <li class="nav-li"><a class="sil" href="">по цене</a></li>
+                <li class="nav-li"><a class="sil" href="">по типу</a></li>
+                <li class="nav-li"> <a class="sil" href="">по названию</a> </li>
+                <button class="nav-li-btn" id="name"></button>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <!-- <div class="product"> -->
+            
+    
+    <div class="blck">
+        
+        <div class="leibl">
+            <div class="cap">
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+            </div>
+            <div class="image">
+                  <img src="img/sedona.png" alt="sedona-price">  
+            </div>
+        </div>
+        <div class="price">
+            <div class="container_top">
+                <h3 class="top">
+                    Sedona
+                </h3>
+                <p class="desc">
+                    Информационный сайт для туристов
+                </p>
+                <button class="btn btn--catalog">
+                    9900 руб.
+                </button>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="blck">
+        
+        <div class="leibl">
+            <div class="cap">
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+            </div>
+            <div class="image">
+                  <img src="img/pink.png" alt="pink-price">  
+            </div>
+        </div>
+        <div class="price">
+            <div class="container_top">
+                <h3 class="top">
+                    pinl-app
+                </h3>
+                <p class="desc">
+                    Продуктовый лендинг приложения для iOS и Android
+                </p>
+                <button class="btn btn--catalog">
+                    9900 руб.
+                </button>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="blck">
+        
+        <div class="leibl">
+            <div class="cap">
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+            </div>
+            <div class="image">
+                  <img src="img/barbershop.png" alt="barbershop-price">  
+            </div>
+        </div>
+        <div class="price">
+            <div class="container_top">
+                <h3 class="top">
+                    barbershop
+                </h3>
+                <p class="desc">
+                    Сайт салоны красоты. Для мужчин, да.
+                </p>
+                <button class="btn btn--catalog">
+                    9900 руб.
+                </button>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="blck">
+        
+        <div class="leibl">
+            <div class="cap">
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+            </div>
+            <div class="image">
+                  <img src="img/mishka.png" alt="michka-prise">  
+            </div>
+        </div>
+        <div class="price">
+            <div class="container_top">
+                <h3 class="top">
+                    Mishka
+                </h3>
+                <p class="desc">
+                    Интернет-магазин  вязаных игрушек
+                </p>
+                <button class="btn btn--catalog">
+                    9900 руб.
+                </button>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="blck">
+        
+        <div class="leibl">
+            <div class="cap">
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+            </div>
+            <div class="image">
+                  <img src="img/aplus.png" alt="aplus-prise">  
+            </div>
+        </div>
+        <div class="price">
+            <div class="container_top">
+                <h3 class="top">
+                    a Plus
+                </h3>
+                <p class="desc">
+                    Лендинг курсов повышения квалификации
+                </p>
+                <button class="btn btn--catalog">
+                    9900 руб.
+                </button>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="blck">
+        
+        <div class="leibl">
+            <div class="cap">
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+            </div>
+            <div class="image">
+                  <img src="img/kvast.png" alt="kvast-prise">  
+            </div>
+        </div>
+        <div class="price">
+            <div class="container_top">
+                <h3 class="top">
+                    кваст
+                </h3>
+                <p class="desc">
+                    Промо-сайт производителя крафтового кваса
+                </p>
+                <button class="btn btn--catalog">
+                    9900 руб.
+                </button>
+            </div>
+            
+        </div>
+    </div>
+    
+
+
+        <!-- </div> -->
+        <div class="namber_btn">
+                <button class="namber one"><h3>1</h3></button>
+                <button class="namber"><h3>2</h3></button>
+                <button class="namber"><h3>3</h3></button>
+                <button class="namber next"><h3>следующая</h3></button>
+            </div>
+    </div>
+</div>
+</div>
+
+<section class="contacts">
     <div class="container--contacts">
         <address class="address">
             <h4 class="address__title">nerds design studio</h4>
@@ -92,6 +379,8 @@
         </address>
     </div>
 </section>
+
+  </div>
   
 
 <footer class="footer">
